@@ -1,7 +1,7 @@
-import type { Metadata } from "next"; 
-import "@/styles/globals.css"; 
+import type { Metadata } from "next";
+import "@/styles/globals.css";
 import NavBar from "@/components/nav-bar";
- 
+
 
 export const metadata: Metadata = {
   title: "Zeo API",
@@ -15,9 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <div className="flex-1 flex flex-col">
-      <NavBar/>
+      <NavBar />
       {children}
     </div>
- 
+
   );
 }

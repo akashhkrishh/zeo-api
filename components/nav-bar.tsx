@@ -9,8 +9,9 @@ import { ThemeToggle } from './theme-toggle'
 import { GithubIcon } from 'lucide-react'
 import Logo from '@/assets/images/zeoapi.svg'
 import { usePathname, useRouter } from 'next/navigation'
+import { MobileDrawer } from './mobile-drawer-menu'
 
-const navList = [
+export const navList = [
   { title: "Home", href: "/" },
   { title: "Guide", href: "/guide" },
   // { title: "License", href: "/license" },
@@ -62,9 +63,12 @@ const NavBar = React.memo(() => {
 
           {/* Divider */}
           <span className='h-6 border-r md:block hidden'></span>
+          <div className='md:hidden'>
+          <MobileDrawer/>
 
+          </div>
           {/* Action Buttons */}
-          <div className='flex items-center gap-3'>
+          <div className='items-center gap-3 md:flex hidden'>
             <Button onClick={() => {router.push("/custom-response")}} variant='outline' className='hover:text-primary text-sm'>
               Custom Response
             </Button>

@@ -1,8 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    images: {
-        domains: ['api.akashhkrishh.in'], // Add your external image domain here
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'api.akashhkrishh.in',
+        pathname: '/**',
       },
+    ], // Add your external image domain here
+  },
 };
 
 export default nextConfig;

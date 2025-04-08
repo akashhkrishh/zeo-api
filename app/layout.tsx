@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 import "@/styles/globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import ReduxProvider from "@/redux/ReduxWrapper"
+import { Toaster } from "@/components/ui/sonner"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={`${inter.className} flex flex-col w-full lg:h-screen `} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange={false}>
           <ReduxProvider>
+            <Toaster className=" rounded-none" />
             {children}
           </ReduxProvider>
         </ThemeProvider>
