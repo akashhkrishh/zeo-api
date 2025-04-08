@@ -74,7 +74,7 @@ const NavBar = React.memo(() => {
             </Button>
             <ThemeToggle />
             <a
-              href="https://github.com/akashhkrishh"
+              href="https://github.com/akashhkrishh/zeo-api"
               target="_blank"
               rel="noopener noreferrer"
             >
