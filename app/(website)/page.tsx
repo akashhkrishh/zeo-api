@@ -101,28 +101,28 @@ const Home = () => {
           </CardHeader>
           <CardContent className="mt-2 w-full flex flex-col gap-2 p-0">
             <div className="flex items-center">
-              <Link className="w-[150px] text-primary italic" href="/user">
+              <Link className="w-[150px] text-primary italic"  href={"https://api.akashhkrishh.in/api/users"}>
                 users/
               </Link>
-              <Label className="text-muted-foreground max-md:truncate">- api.akashhkrishh.in/users</Label>
+              <Label className="text-muted-foreground max-md:truncate">- api.akashhkrishh.in/api/users</Label>
             </div>
             <div className="flex items-center">
-              <Link className="w-[150px] text-primary italic" href="/user">
+              <Link className="w-[150px] text-primary italic" href={"https://api.akashhkrishh.in/api/users/1"}>
                 users/:id
               </Link>
-              <Label className="text-muted-foreground max-md:truncate">- api.akashhkrishh.in/users/1</Label>
+              <Label className="text-muted-foreground max-md:truncate">- api.akashhkrishh.in/api/users/1</Label>
             </div>
             <div className="flex items-center">
-              <Link className="w-[150px] text-primary italic" href="/user">
-                users/images/
+              <Link className="w-[150px] text-primary italic" href={"https://api.akashhkrishh.in/api/images/users"}>
+              images/users
               </Link>
-              <Label className="text-muted-foreground max-md:truncate">- api.akashhkrishh.in/users/images</Label>
+              <Label className="text-muted-foreground max-md:truncate">- api.akashhkrishh.in/api/images/users</Label>
             </div>
             <div className="flex items-center">
-              <Link className="w-[150px] text-primary italic" href="/user">
-                users/:id/images/
+              <Link className="w-[150px] text-primary italic" href={"https://api.akashhkrishh.in/api/images/users/1"}>
+              images/users/:id
               </Link>
-              <Label className="text-muted-foreground max-md:truncate">- api.akashhkrishh.in/users/1/images</Label>
+              <Label className="text-muted-foreground max-md:truncate">- api.akashhkrishh.in/api/images/users/1</Label>
             </div>
           </CardContent>
         </Card>

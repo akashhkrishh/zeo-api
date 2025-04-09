@@ -7,6 +7,11 @@ const nextConfig = {
         hostname: 'api.akashhkrishh.in',
         pathname: '/**',
       },
+      {
+        protocol: 'http',
+        hostname: 'localhost',
+        pathname: '/**',
+      },
     ], // Add your external image domain here
   },
 };

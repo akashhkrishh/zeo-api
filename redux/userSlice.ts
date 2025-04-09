@@ -3,16 +3,17 @@ import { Post, UserProfile } from '@/types/type'
 
 interface UserState {
   id: number
-  data: UserProfile[]
+  data: UserProfile | null
   loading: boolean
   error: string | null
 }
 
 // Async thunk to fetch data based on the ID
-export const fetchData = createAsyncThunk<UserProfile[], number>(
+export const fetchData = createAsyncThunk<UserProfile, number>(
   'data/fetchData',
   async (id) => {
-    const response = await fetch(`https://api.akashhkrishh.in/users/${id}`)
+    const response = await fetch(`https://api.akashhkrishh.in
+/api/users/${id}`)
     const data = await response.json()
     return data
   }
@@ -20,7 +21,7 @@ export const fetchData = createAsyncThunk<UserProfile[], number>(
 
 const initialState: UserState = {
   id: 1, // Default ID set to 1
-  data: [],
+  data: null,
   loading: false,
   error: null,
 }
@@ -39,7 +40,7 @@ const dataSlice = createSlice({
       .addCase(fetchData.pending, (state) => {
         state.loading = true
       })
-      .addCase(fetchData.fulfilled, (state, action: PayloadAction<UserProfile[]>) => {
+      .addCase(fetchData.fulfilled, (state, action: PayloadAction<UserProfile>) => {
         state.loading = false
         state.data = action.payload
       })

@@ -5,7 +5,7 @@ import LoadingAnimation from './loading-animation'
 import { CircleDot, Mail, Phone, Pin, User } from 'lucide-react'
 
 type Props = {
-  data: UserProfile[]
+  data: UserProfile | null
   isLoading: boolean
 }
 
@@ -18,7 +18,7 @@ function ProfileCard({ data, isLoading }: Props) {
   }
 
   // If no data is available, show this message
-  if (!data || data.length === 0) {
+  if (!data ) {
     return (
       <div className='w-full h-full flex items-center justify-center text-muted-foreground'>
         No user data available
@@ -27,7 +27,7 @@ function ProfileCard({ data, isLoading }: Props) {
   }
 
   // Use the first user from the data for the profile card
-  const user = data[0]
+  const user = data
 
   return (
     <div className='p-4 grid md:grid-cols-10 h-full  flex-1 gap-4'>
@@ -37,7 +37,7 @@ function ProfileCard({ data, isLoading }: Props) {
           <div className='relative aspect-square rounded-full  overflow-hidden border-2'>
             <Image
               className='absolute'
-              src={`https://api.akashhkrishh.in/images/users/${user.user_id}`}
+              src={`${user.image_link}`}
               alt={`${user.first_name} ${user.last_name}`}
               layout='fill'
               objectFit='cover'

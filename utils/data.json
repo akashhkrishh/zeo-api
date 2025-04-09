@@ -1,0 +1,466 @@
+[
+    {
+      "user_id": 1,
+      "username": "alice",
+      "email": "alice@example.com",
+      "first_name": "Alice",
+      "last_name": "Smith",
+      "age": 28,
+      "address": {
+        "city": "Metropolis",
+        "state": "NY",
+        "street": "456 Oak St",
+        "zip_code": "10001"
+      },
+      "phone_numbers": [
+        {
+          "type": "home",
+          "number": "555-6789"
+        }
+      ],
+      "is_active": true,
+      "registration_date": "2024-07-27T12:00:00.000Z",
+      "image_link": "https://api.akashhkrishh.in/api/images/users/1"
+    },
+    {
+      "user_id": 2,
+      "username": "bob",
+      "email": "bob@example.com",
+      "first_name": "Bob",
+      "last_name": "Johnson",
+      "age": 35,
+      "address": {
+        "city": "Gotham",
+        "state": "NJ",
+        "street": "789 Pine St",
+        "zip_code": "07001"
+      },
+      "phone_numbers": [
+        {
+          "type": "mobile",
+          "number": "555-2345"
+        }
+      ],
+      "is_active": false,
+      "registration_date": "2024-07-27T13:00:00.000Z",
+      "image_link": "https://api.akashhkrishh.in/api/images/users/2"
+    },
+    {
+      "user_id": 3,
+      "username": "carol",
+      "email": "carol@example.com",
+      "first_name": "Carol",
+      "last_name": "Williams",
+      "age": 40,
+      "address": {
+        "city": "Smallville",
+        "state": "KS",
+        "street": "123 Elm St",
+        "zip_code": "66002"
+      },
+      "phone_numbers": [
+        {
+          "type": "home",
+          "number": "555-3456"
+        },
+        {
+          "type": "mobile",
+          "number": "555-4567"
+        }
+      ],
+      "is_active": true,
+      "registration_date": "2024-07-27T14:00:00.000Z",
+      "image_link": "https://api.akashhkrishh.in/api/images/users/3"
+    },
+    {
+      "user_id": 4,
+      "username": "dave",
+      "email": "dave@example.com",
+      "first_name": "Dave",
+      "last_name": "Jones",
+      "age": 22,
+      "address": {
+        "city": "Star City",
+        "state": "CA",
+        "street": "234 Maple St",
+        "zip_code": "90001"
+      },
+      "phone_numbers": [
+        {
+          "type": "home",
+          "number": "555-5678"
+        }
+      ],
+      "is_active": true,
+      "registration_date": "2024-07-27T15:00:00.000Z",
+      "image_link": "https://api.akashhkrishh.in/api/images/users/4"
+    },
+    {
+      "user_id": 5,
+      "username": "eve",
+      "email": "eve@example.com",
+      "first_name": "Eve",
+      "last_name": "Brown",
+      "age": 31,
+      "address": {
+        "city": "Central City",
+        "state": "IL",
+        "street": "345 Birch St",
+        "zip_code": "60601"
+      },
+      "phone_numbers": [
+        {
+          "type": "mobile",
+          "number": "555-6789"
+        }
+      ],
+      "is_active": false,
+      "registration_date": "2024-07-27T16:00:00.000Z",
+      "image_link": "https://api.akashhkrishh.in/api/images/users/5"
+    },
+    {
+      "user_id": 6,
+      "username": "frank",
+      "email": "frank@example.com",
+      "first_name": "Frank",
+      "last_name": "Davis",
+      "age": 29,
+      "address": {
+        "city": "Coast City",
+        "state": "FL",
+        "street": "456 Cedar St",
+        "zip_code": "33101"
+      },
+      "phone_numbers": [
+        {
+          "type": "home",
+          "number": "555-7890"
+        }
+      ],
+      "is_active": true,
+      "registration_date": "2024-07-27T17:00:00.000Z",
+      "image_link": "https://api.akashhkrishh.in/api/images/users/6"
+    },
+    {
+      "user_id": 7,
+      "username": "grace",
+      "email": "grace@example.com",
+      "first_name": "Grace",
+      "last_name": "Miller",
+      "age": 38,
+      "address": {
+        "city": "Fawcett City",
+        "state": "TX",
+        "street": "567 Ash St",
+        "zip_code": "75001"
+      },
+      "phone_numbers": [
+        {
+          "type": "mobile",
+          "number": "555-8901"
+        }
+      ],
+      "is_active": true,
+      "registration_date": "2024-07-27T18:00:00.000Z",
+      "image_link": "https://api.akashhkrishh.in/api/images/users/7"
+    },
+    {
+      "user_id": 8,
+      "username": "henry",
+      "email": "henry@example.com",
+      "first_name": "Henry",
+      "last_name": "Wilson",
+      "age": 45,
+      "address": {
+        "city": "Paradise",
+        "state": "NV",
+        "street": "678 Willow St",
+        "zip_code": "89101"
+      },
+      "phone_numbers": [
+        {
+          "type": "home",
+          "number": "555-9012"
+        }
+      ],
+      "is_active": true,
+      "registration_date": "2024-07-27T19:00:00.000Z",
+      "image_link": "https://api.akashhkrishh.in/api/images/users/8"
+    },
+    {
+      "user_id": 9,
+      "username": "ida",
+      "email": "ida@example.com",
+      "first_name": "Ida",
+      "last_name": "Moore",
+      "age": 27,
+      "address": {
+        "city": "Sunset",
+        "state": "WA",
+        "street": "789 Spruce St",
+        "zip_code": "98001"
+      },
+      "phone_numbers": [
+        {
+          "type": "mobile",
+          "number": "555-0123"
+        }
+      ],
+      "is_active": false,
+      "registration_date": "2024-07-27T20:00:00.000Z",
+      "image_link": "https://api.akashhkrishh.in/api/images/users/9"
+    },
+    {
+      "user_id": 10,
+      "username": "john",
+      "email": "john@example.com",
+      "first_name": "John",
+      "last_name": "Taylor",
+      "age": 33,
+      "address": {
+        "city": "Springfield",
+        "state": "OR",
+        "street": "890 Fir St",
+        "zip_code": "97401"
+      },
+      "phone_numbers": [
+        {
+          "type": "home",
+          "number": "555-1234"
+        }
+      ],
+      "is_active": true,
+      "registration_date": "2024-07-27T21:00:00.000Z",
+      "image_link": "https://api.akashhkrishh.in/api/images/users/10"
+    },
+    {
+      "user_id": 11,
+      "username": "karen",
+      "email": "karen@example.com",
+      "first_name": "Karen",
+      "last_name": "Anderson",
+      "age": 26,
+      "address": {
+        "city": "Metro City",
+        "state": "CO",
+        "street": "901 Hickory St",
+        "zip_code": "80201"
+      },
+      "phone_numbers": [
+        {
+          "type": "mobile",
+          "number": "555-2345"
+        }
+      ],
+      "is_active": true,
+      "registration_date": "2024-07-27T22:00:00.000Z",
+      "image_link": "https://api.akashhkrishh.in/api/images/users/11"
+    },
+    {
+      "user_id": 12,
+      "username": "leo",
+      "email": "leo@example.com",
+      "first_name": "Leo",
+      "last_name": "Thomas",
+      "age": 50,
+      "address": {
+        "city": "Emerald City",
+        "state": "PA",
+        "street": "1010 Walnut St",
+        "zip_code": "19101"
+      },
+      "phone_numbers": [
+        {
+          "type": "home",
+          "number": "555-3456"
+        }
+      ],
+      "is_active": false,
+      "registration_date": "2024-07-27T23:00:00.000Z",
+      "image_link": "https://api.akashhkrishh.in/api/images/users/12"
+    },
+    {
+      "user_id": 13,
+      "username": "mona",
+      "email": "mona@example.com",
+      "first_name": "Mona",
+      "last_name": "Jackson",
+      "age": 32,
+      "address": {
+        "city": "Skyline",
+        "state": "MD",
+        "street": "1111 Chestnut St",
+        "zip_code": "21001"
+      },
+      "phone_numbers": [
+        {
+          "type": "mobile",
+          "number": "555-4567"
+        }
+      ],
+      "is_active": true,
+      "registration_date": "2024-07-28T00:00:00.000Z",
+      "image_link": "https://api.akashhkrishh.in/api/images/users/13"
+    },
+    {
+      "user_id": 14,
+      "username": "nick",
+      "email": "nick@example.com",
+      "first_name": "Nick",
+      "last_name": "White",
+      "age": 41,
+      "address": {
+        "city": "Lakeside",
+        "state": "VA",
+        "street": "1212 Poplar St",
+        "zip_code": "23201"
+      },
+      "phone_numbers": [
+        {
+          "type": "home",
+          "number": "555-5678"
+        }
+      ],
+      "is_active": true,
+      "registration_date": "2024-07-27T01:00:00.000Z",
+      "image_link": "https://api.akashhkrishh.in/api/images/users/14"
+    },
+    {
+      "user_id": 15,
+      "username": "olivia",
+      "email": "olivia@example.com",
+      "first_name": "Olivia",
+      "last_name": "Harris",
+      "age": 24,
+      "address": {
+        "city": "Greenwich",
+        "state": "GA",
+        "street": "1313 Sycamore St",
+        "zip_code": "30301"
+      },
+      "phone_numbers": [
+        {
+          "type": "mobile",
+          "number": "555-6789"
+        }
+      ],
+      "is_active": false,
+      "registration_date": "2024-07-27T02:00:00.000Z",
+      "image_link": "https://api.akashhkrishh.in/api/images/users/15"
+    },
+    {
+      "user_id": 16,
+      "username": "paul",
+      "email": "paul@example.com",
+      "first_name": "Paul",
+      "last_name": "Martin",
+      "age": 39,
+      "address": {
+        "city": "Bayside",
+        "state": "MI",
+        "street": "1414 Redwood St",
+        "zip_code": "48201"
+      },
+      "phone_numbers": [
+        {
+          "type": "home",
+          "number": "555-7890"
+        }
+      ],
+      "is_active": true,
+      "registration_date": "2024-07-27T03:00:00.000Z",
+      "image_link": "https://api.akashhkrishh.in/api/images/users/16"
+    },
+    {
+      "user_id": 17,
+      "username": "quinn",
+      "email": "quinn@example.com",
+      "first_name": "Quinn",
+      "last_name": "Thompson",
+      "age": 28,
+      "address": {
+        "city": "Harborview",
+        "state": "IL",
+        "street": "1515 Magnolia St",
+        "zip_code": "60601"
+      },
+      "phone_numbers": [
+        {
+          "type": "mobile",
+          "number": "555-8901"
+        }
+      ],
+      "is_active": true,
+      "registration_date": "2024-07-27T04:00:00.000Z",
+      "image_link": "https://api.akashhkrishh.in/api/images/users/17"
+    },
+    {
+      "user_id": 18,
+      "username": "rachel",
+      "email": "rachel@example.com",
+      "first_name": "Rachel",
+      "last_name": "Garcia",
+      "age": 46,
+      "address": {
+        "city": "Sunnydale",
+        "state": "AZ",
+        "street": "1616 Elm St",
+        "zip_code": "85001"
+      },
+      "phone_numbers": [
+        {
+          "type": "home",
+          "number": "555-9012"
+        }
+      ],
+      "is_active": false,
+      "registration_date": "2024-07-27T05:00:00.000Z",
+      "image_link": "https://api.akashhkrishh.in/api/images/users/18"
+    },
+    {
+      "user_id": 19,
+      "username": "sam",
+      "email": "sam@example.com",
+      "first_name": "Sam",
+      "last_name": "Rodriguez",
+      "age": 30,
+      "address": {
+        "city": "Riverside",
+        "state": "OH",
+        "street": "1717 Maple St",
+        "zip_code": "44101"
+      },
+      "phone_numbers": [
+        {
+          "type": "mobile",
+          "number": "555-0123"
+        }
+      ],
+      "is_active": true,
+      "registration_date": "2024-07-27T06:00:00.000Z",
+      "image_link": "https://api.akashhkrishh.in/api/images/users/19"
+    },
+    {
+      "user_id": 20,
+      "username": "tina",
+      "email": "tina@example.com",
+      "first_name": "Tina",
+      "last_name": "Martinez",
+      "age": 27,
+      "address": {
+        "city": "Hillcrest",
+        "state": "WI",
+        "street": "1818 Cedar St",
+        "zip_code": "53201"
+      },
+      "phone_numbers": [
+        {
+          "type": "home",
+          "number": "555-1234"
+        }
+      ],
+      "is_active": true,
+      "registration_date": "2024-07-27T07:00:00.000Z",
+      "image_link": "https://api.akashhkrishh.in/api/images/users/20"
+    }
+  ]
