@@ -42,7 +42,17 @@ const Home = () => {
   return (
     <div className="mx-auto max-w-6xl px-4 lg:px-8 p-4 flex-1 w-full scroll-smooth">
       <div className="flex flex-col gap-4 items-center justify-center md:py-10 py-4">
-        <Image src={Logo} height={80} width={80} alt="ZEO API" priority />
+        
+          <Image
+            src={Logo}
+            priority
+            alt="Zeo API Image"
+            className=" aspect-square"
+            width={80}
+            height={80}
+          />
+      
+
         <h1 className="text-3xl md:text-4xl lg:text-6xl font-semibold text-primary">ZEO API</h1>
         <h6 className="text-center">Free and Instant Sample JSON data for development</h6>
         <div className="flex items-center justify-center gap-4 w-full">
@@ -101,26 +111,26 @@ const Home = () => {
           </CardHeader>
           <CardContent className="mt-2 w-full flex flex-col gap-2 p-0">
             <div className="flex items-center">
-              <Link className="w-[150px] text-primary italic"  href={"https://api.akashhkrishh.in/api/users"}>
+              <Link className="w-[150px] text-primary italic" href={"/api/users"}>
                 users/
               </Link>
               <Label className="text-muted-foreground max-md:truncate">- api.akashhkrishh.in/api/users</Label>
             </div>
             <div className="flex items-center">
-              <Link className="w-[150px] text-primary italic" href={"https://api.akashhkrishh.in/api/users/1"}>
+              <Link className="w-[150px] text-primary italic" href={"/api/users/1"}>
                 users/:id
               </Link>
               <Label className="text-muted-foreground max-md:truncate">- api.akashhkrishh.in/api/users/1</Label>
             </div>
             <div className="flex items-center">
-              <Link className="w-[150px] text-primary italic" href={"https://api.akashhkrishh.in/api/images/users"}>
-              images/users
+              <Link className="w-[150px] text-primary italic" href={"api/images/users"}>
+                images/users
               </Link>
               <Label className="text-muted-foreground max-md:truncate">- api.akashhkrishh.in/api/images/users</Label>
             </div>
             <div className="flex items-center">
-              <Link className="w-[150px] text-primary italic" href={"https://api.akashhkrishh.in/api/images/users/1"}>
-              images/users/:id
+              <Link className="w-[150px] text-primary italic" href={"api/images/users/1"}>
+                images/users/:id
               </Link>
               <Label className="text-muted-foreground max-md:truncate">- api.akashhkrishh.in/api/images/users/1</Label>
             </div>

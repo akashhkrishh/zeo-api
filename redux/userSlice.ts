@@ -12,8 +12,7 @@ interface UserState {
 export const fetchData = createAsyncThunk<UserProfile, number>(
   'data/fetchData',
   async (id) => {
-    const response = await fetch(`https://api.akashhkrishh.in
-/api/users/${id}`)
+    const response = await fetch(`/api/users/${id}`)
     const data = await response.json()
     return data
   }

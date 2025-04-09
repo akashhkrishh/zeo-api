@@ -23,7 +23,7 @@ const NavBar = React.memo(() => {
   const pathname = usePathname() // Get the current path
 
   return (
-    <div className='sticky top-0 z-50 bg-background flex flex-col'>
+    <div className='sticky top-0 max-w-6xl mx-auto w-full z-50 bg-background flex flex-col'>
       <div className='py-4 px-4 lg:px-8 border-b flex items-center justify-between'>
         
         {/* Logo and Label */}
