@@ -10,6 +10,7 @@ const HomePage = () => {
       try {
         const response = await fetch("/api/getClientIP");
         const data = await response.json();
+        console.log(JSON.stringify(data));
         setIp(data.ip);
       } catch (error) {
         console.error("Error fetching IP:", error);
