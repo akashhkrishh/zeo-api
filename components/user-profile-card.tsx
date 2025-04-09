@@ -40,7 +40,6 @@ function ProfileCard({ data, isLoading }: Props) {
               src={`/api/images/users/${user.user_id}`}
               alt={`${user.first_name} ${user.last_name}`}
               width={300}
-
               height={300}
               priority
             />
