@@ -3,11 +3,18 @@
 import { NextRequest } from "next/server";
 
 export async function GET(req: NextRequest) {
-  // Get the client's IP from 'x-forwarded-for' header (used when behind a proxy)
-  const ip = req.headers.get("x-forwarded-for") || req.ip;
+  // Get the IP from the 'x-forwarded-for' header or req.ip
+  const forwardedFor = req.headers.get("x-forwarded-for");
+  const ip = forwardedFor ? forwardedFor.split(',')[0] : req.ip;
 
-  // Return the IP address as a JSON response
-  return new Response(JSON.stringify({ ip }), {
-    headers: { "Content-Type": "application/json" },
-  });
+  // Check if the IP is an IPv6 address
+  const isIPv6 = ip && ip.includes(':');
+
+  // Return the IP address and whether it's IPv6
+  return new Response(
+    JSON.stringify({ ip, isIPv6 }),
+    {
+      headers: { "Content-Type": "application/json" },
+    }
+  );
 }
