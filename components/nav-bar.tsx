@@ -8,8 +8,8 @@ import { Button } from './ui/button'
 import { ThemeToggle } from './theme-toggle'
 import { GithubIcon } from 'lucide-react'
 import Logo from '@/assets/images/zeoapi.svg'
-import { usePathname, useRouter } from 'next/navigation'
-import { MobileDrawer } from './mobile-drawer-menu'
+import { useRouter } from 'next/navigation'
+// import { MobileDrawer } from './mobile-drawer-menu'
 
 export const navList = [
   { title: "Home", href: "/" },
@@ -20,14 +20,14 @@ export const navList = [
 
 const NavBar = React.memo(() => {
   const router = useRouter();
-  const pathname = usePathname() // Get the current path
+  // const pathname = usePathname() // Get the current path
 
   return (
     <div className='sticky top-0 max-w-6xl mx-auto w-full z-50 bg-background flex flex-col'>
       <div className='py-4 px-4 lg:px-8 border-b flex items-center justify-between'>
         
         {/* Logo and Label */}
-        <div className='flex items-center gap-6'>
+        <Link href='/' className='flex items-center gap-6'>
           <div className='flex items-center gap-2'>
             <Image
               src={Logo}
@@ -39,12 +39,12 @@ const NavBar = React.memo(() => {
             />
             <Label className='text-sm'>ZEOAPI</Label>
           </div>
-        </div>
+        </Link>
 
         {/* Navigation Links and Buttons */}
         <div className='flex items-center gap-4'>
           {/* Desktop Navigation Links */}
-          <div className='md:flex items-center gap-8 hidden'>
+          {/* <div className='md:flex items-center gap-8 hidden'>
             {navList.map(({ title, href }, index) => {
               const isActive = pathname === href // Check if the current path matches the nav item's href
               return (
@@ -59,16 +59,16 @@ const NavBar = React.memo(() => {
                 </Link>
               )
             })}
-          </div>
+          </div> */}
 
           {/* Divider */}
-          <span className='h-6 border-r md:block hidden'></span>
-          <div className='md:hidden'>
+          {/* <span className='h-6 border-r md:block hidden'></span> */}
+          {/* <div className='md:hidden'>
           <MobileDrawer/>
 
-          </div>
+          </div> */}
           {/* Action Buttons */}
-          <div className='items-center gap-3 md:flex hidden'>
+          <div className='items-center gap-3 flex'>
             <Button onClick={() => {router.push("/custom-response")}} variant='outline' className='hover:text-primary text-sm'>
               Custom Response
             </Button>
